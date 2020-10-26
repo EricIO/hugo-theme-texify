@@ -2,13 +2,6 @@
     margin-top: 2rem;
 }
 
-#main > .post > h2 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 #main > .post > h2 > time {
     font-size: 1rem;
     font-weight: normal;

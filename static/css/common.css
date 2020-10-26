@@ -179,3 +179,19 @@ time {
 #footer > .footnote {
     text-align: center;
 }
+
+.front-matter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-posts {
+    margin-top: 25px;
+}
+
+.author-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

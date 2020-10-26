@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {{ partial "head.html" }}
+    <link rel="stylesheet" href='{{ "css/index.css" | absURL }}'>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <main id="main" class="index">
+        <h1>{{ .Params.name }}</h1>
+        <p>{{ .Content }}</p>
+        <ul>
+          {{ range .Data.Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+        <div class="author-posts">
+          {{ range where .Site.RegularPages ".Params.author" $.Params.nick }}
+          <div class="author-post">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <time>{{ .PublishDate.Format "2006-01-02" }}</time>
+          </div>
+          {{ end }}
+        </divo>
+      </main>
+    </div>
+  </body>
+</html>
