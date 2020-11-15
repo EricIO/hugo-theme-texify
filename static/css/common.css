@@ -195,3 +195,7 @@ time {
     align-items: center;
     justify-content: space-between;
 }
+
+img {
+    display: block;
+}
