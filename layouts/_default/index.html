@@ -18,7 +18,7 @@
               <h2>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
               </h2>
-              <span>by <a href="/authors/{{ .Params.author }}">{{ .Params.author }}</span></a>
+              <span>by <a class="link" href="/authors/{{ .Params.author }}">{{ .Params.author }}</span></a>
             </div>
             <time>{{ .PublishDate.Format "2006-01-02" }}</time>
           </div>

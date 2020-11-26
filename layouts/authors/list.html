@@ -8,6 +8,7 @@
 
   <body>
     <div id="wrapper">
+      {{ partial "header.html" . }}
       <main id="main" class="index">
         <h1>{{ .Params.name }}</h1>
         <p>{{ .Content }}</p>
@@ -23,8 +24,9 @@
             <time>{{ .PublishDate.Format "2006-01-02" }}</time>
           </div>
           {{ end }}
-        </divo>
+        </div>
       </main>
+      {{ partial "footer.html" . }}
     </div>
   </body>
 </html>
