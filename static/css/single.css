@@ -1,7 +1,7 @@
 #main > h1 {
     text-align: center;
     /* looks better with some spacing underneath post titles */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
 #main > div + .content {
