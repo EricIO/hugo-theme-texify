@@ -41,6 +41,11 @@
 <title>{{ .Title }} - {{ .Site.Title }}</title>
 {{ end }}
 
+<!-- rss/atom/etc -->
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <!-- mathjax -->
 {{ if .Site.Params.enable_mathjax }}
 {{ partial "mathjax.html" . }}
